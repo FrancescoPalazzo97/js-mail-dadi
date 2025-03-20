@@ -42,10 +42,10 @@ console.log(`Secondo esercizio sul gioco dei dadi`); // Avviso inizio secondo es
 
 alert(`Benvenuto al gioco dei dadi!\nprocedi per tirare il dado\nIl numero sarà compreso tra 1 e 6`); // Benvenuto all'utente
 console.log(`Benvenuto al gioco dei dadi!\nprocedi per tirare il dado\nIl numero sarà compreso tra 1 e 6`); // Benvenuto all'utente
-let myNum = Math.floor(Math.random() * 6); // Genero un numero ccasuale per l'utente
+let myNum = Math.floor(Math.random() * 6 + 1); // Genero un numero ccasuale per l'utente
 alert (`Il tuo numero è ${myNum}`); // Avviso l'utente su quale numero è uscito
 console.log(`Il tuo numero è ${myNum}`); // Avviso l'utente su quale numero è uscito
-let pcNum = Math.floor(Math.random() * 6); // Genero un numero ccasuale per il pc
+let pcNum = Math.floor(Math.random() * 6 + 1); // Genero un numero ccasuale per il pc
 alert (`Il numero del computer è ${pcNum}`); // Avviso l'utente su quale numero è uscito al pc
 console.log(`Il numero del computer è ${pcNum}`); // Avviso l'utente su quale numero è uscito al pc
 

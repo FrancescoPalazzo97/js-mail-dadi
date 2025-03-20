@@ -3,10 +3,10 @@ const myMail = prompt(`Inserisci la tua mail`); // Dichiaro una variabile che co
 let flag = false; // Diachiaro una variabile che mi serve come check
 let index; // Diachiaro una varibile da usare sucessivamente per trovare l'indice
 
-let myMailTemp = myMail.toLocaleLowerCase; // Diachiaro una variabile che contiene la mail inserita dall'utente in minuscolo
+let myMailTemp = myMail.toLowerCase(); // Diachiaro una variabile che contiene la mail inserita dall'utente in minuscolo
 
 for (let i = 0; i < listaInvitati.length && !flag; i++){ // Inizio un ciclo che mi scorre l'array con le mail e si ferma o lla fine della lista o quanto viene trovalo l'elemento trovato
-    if (myMail === listaInvitati[i]){ // Se la mail inserita dall'utente combacia con una della lista allora:
+    if (myMailTemp === listaInvitati[i]){ // Se la mail inserita dall'utente combacia con una della lista allora:
         flag = true; // La variabilie flag gli assegno valore true
         index = i + 1; // Assegno alla variabile index la posizione dell'elemento trovato
     } // Chiudo blocco if

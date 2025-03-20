@@ -13,7 +13,18 @@ const listaInvitati = [
     `elisa.ferrari@mailservice.com`, 
     `alessandro.fontana@provider.net`, 
     `laura.novelli@fakeemail.org`]; // Diachiaro una variabili che contiene la lista degli invitati
-const myMail = prompt(`Inserisci la tua mail`); // Dichiaro una variabile che contiene la mail dell'utente che inserisce tramite prompt
+let valid = false; // Diachiaro una variabile che mi serve come check
+let myMail; // Dichiaro una variabile che conterrà la mail da cercare
+
+while (!valid){ // Ciclo while per verificare che l'email inserita rispetti certi parametri in caso contrario la faccio reinserire
+    myMail = prompt(`Inserisci la tua mail`); // Faccio inserire la mail dell'utente tramite prompt
+    if (myMail.includes(`@`) && (myMail.includes(`.com`) || myMail.includes(`.net`) || myMail.includes(`.org`))){ // Parametri per email valide
+        valid = true; // Se l'email rispetta i parametri assegno true alla variabile che fa terminare il ciclo
+    } else { // Altrimenti
+        alert(`Email non valida!`)// Se non rispetta i parametri il ciclo si ripete e l'utente deve reinserire nuovamente l'email
+    }
+}
+
 let flag = false; // Diachiaro una variabile che mi serve come check
 let index; // Diachiaro una varibile da usare sucessivamente per trovare l'indice
 

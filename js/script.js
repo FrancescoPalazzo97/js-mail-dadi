@@ -1,3 +1,4 @@
+// INIZIO PRIMO ESERCIZIO
 // Esercizio delle mail
 alert(`Primo esercizio sulla lista delle mail`); // Avviso inizio primo esercizio
 console.log(`Primo esercizio sulla lista delle mail`); // Avviso inizio primo esercizio
@@ -33,7 +34,8 @@ if (flag) { // Apro blocco if che mi stampa se ha trovato l'elemento oppure no
     alert(`Elemento non trovato`); // Stampa tramite alert
 } // Chiudo blocco if
 //FINE PRIMO ESERCIZIO
-
+//--------------------------------------------------------------------------------------------------------------------------------------------
+//INIZIO SECONDO ESERCIZIO
 //Esercizio gioco dei dadi
 alert(`Secondo esercizio sul gioco dei dadi`); // Avviso inizio secondo esercizio
 console.log(`Secondo esercizio sul gioco dei dadi`); // Avviso inizio secondo esercizio
@@ -46,3 +48,15 @@ console.log(`Il tuo numero è ${myNum}`); // Avviso l'utente su quale numero è 
 let pcNum = Math.floor(Math.random() * 6); // Genero un numero ccasuale per il pc
 alert (`Il numero del computer è ${pcNum}`); // Avviso l'utente su quale numero è uscito al pc
 console.log(`Il numero del computer è ${pcNum}`); // Avviso l'utente su quale numero è uscito al pc
+
+if (myNum > pcNum){ // Blocco condizonale per verficare se il numero dell'utente è maggiore del numero del pc
+    alert(`Hai vinto!`); // Se è maggiore l'utente ha vinto
+    console.log(`Hai vinto!`);
+} else if (myNum < pcNum){ // Se è minore
+    alert(`Hai perso!`); // Ha perso
+    console.log(`Hai perso!`);
+} else { // altrimenti
+    alert(`È un pareggio`); // È un pareggio
+    console.log(`È un pareggio`);
+}
+// FINE SECONDO ESERCIZIO

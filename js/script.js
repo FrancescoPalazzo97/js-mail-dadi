@@ -19,7 +19,7 @@ let index; // Diachiaro una varibile da usare sucessivamente per trovare l'indic
 
 let myMailTemp = myMail.toLowerCase(); // Diachiaro una variabile che contiene la mail inserita dall'utente in minuscolo
 
-for (let i = 0; i < listaInvitati.length && !flag; i++){ // Inizio un ciclo che mi scorre l'array con le mail e si ferma o lla fine della lista o quanto viene trovalo l'elemento trovato
+for (let i = 0; i < listaInvitati.length && !flag; i++){ // Inizio un ciclo che mi scorre l'array con le mail e si ferma o alla fine della lista o quanto viene trovalo l'elemento cercato
     if (myMailTemp === listaInvitati[i]){ // Se la mail inserita dall'utente combacia con una della lista allora:
         flag = true; // La variabilie flag gli assegno valore true
         index = i + 1; // Assegno alla variabile index la posizione dell'elemento trovato
@@ -34,7 +34,9 @@ if (flag) { // Apro blocco if che mi stampa se ha trovato l'elemento oppure no
     alert(`Elemento non trovato`); // Stampa tramite alert
 } // Chiudo blocco if
 //FINE PRIMO ESERCIZIO
+
 //--------------------------------------------------------------------------------------------------------------------------------------------
+
 //INIZIO SECONDO ESERCIZIO
 //Esercizio gioco dei dadi
 alert(`Secondo esercizio sul gioco dei dadi`); // Avviso inizio secondo esercizio
@@ -42,9 +44,11 @@ console.log(`Secondo esercizio sul gioco dei dadi`); // Avviso inizio secondo es
 
 alert(`Benvenuto al gioco dei dadi!\nprocedi per tirare il dado\nIl numero sarà compreso tra 1 e 6`); // Benvenuto all'utente
 console.log(`Benvenuto al gioco dei dadi!\nprocedi per tirare il dado\nIl numero sarà compreso tra 1 e 6`); // Benvenuto all'utente
+
 let myNum = Math.floor(Math.random() * 6 + 1); // Genero un numero ccasuale per l'utente
 alert (`Il tuo numero è ${myNum}`); // Avviso l'utente su quale numero è uscito
 console.log(`Il tuo numero è ${myNum}`); // Avviso l'utente su quale numero è uscito
+
 let pcNum = Math.floor(Math.random() * 6 + 1); // Genero un numero ccasuale per il pc
 alert (`Il numero del computer è ${pcNum}`); // Avviso l'utente su quale numero è uscito al pc
 console.log(`Il numero del computer è ${pcNum}`); // Avviso l'utente su quale numero è uscito al pc
